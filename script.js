@@ -5,6 +5,6 @@ function calcIdade(data_aniversario) {
 
     document.getElementById("idade").innerText = idade;
 
+    console.log(idade);
 }
-
 calcIdade("04/01/2004");
