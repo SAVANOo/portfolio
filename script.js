@@ -3,7 +3,7 @@ function calcIdade(data_aniversario) {
     var ano_informado = data_aniversario.split('/')[2];
     var idade = ano_atual - ano_informado;
 
-    document.getElementById("idade").innerHTML = idade;
+    document.getElementById("idade").innerText = idade;
 
 }
 
