@@ -28,9 +28,54 @@ header {
     color: var(--AZUL-WHITE);
 }
 
-.redes_sociais {
+section {
+    height: 100vh;
+    padding: 0px 50px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+
+h3 {
+    font-weight: 300;
+}
+
+.inicio {
+    align-items: center;
+    background-color: var(--AZUL-QUARTENARIO);
     display: flex;
     justify-content: space-between;
+    text-align: center;
+}
+
+
+.sections a {
+    align-items: center;
+    color: var(--AZUL-WHITE);
+    padding: 0px 15px;
+    text-decoration-line: none;
+
+}
+
+.sections a:hover,
+.sections a:focus {
+    text-decoration-line: underline;
+    color: var(--AZUL-PRIMARIO);
+}
+
+
+.redes_sociais {
+    padding-top: 10px;
+    display: block;
+    align-items: center;
 }
 
 .redes_sociais a {
@@ -43,19 +88,7 @@ header {
     box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 1);
 }
 
-
-
-.inicio {
-    height: 100vh;
-    align-items: center;
-    background-color: var(--AZUL-QUARTENARIO);
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 50px;
-    text-align: center;
-}
-
-.inicio img {
+.imagem_inicio {
     height: 30rem;
     border: solid 10px var(--AZUL-SECUNDARIO);
     border-radius: 50%;
@@ -65,22 +98,68 @@ header {
 
 .Texts {
     padding: 50px;
+    align-items: center;
 }
 
 .Texts h1 {
     color: var(--AZUL-WHITE);
-    font-size: 4rem;
-    font-weight: 600;
 }
 
 .Texts h2 {
     color: var(--AZUL-SECUNDARIO);
-    font-size: 2.5rem;
-    font-weight: 500;
 }
 
 
 .Texts h3 {
     color: white;
-    font-weight: 300;
+}
+
+
+.aboutme {
+    background-color: var(--AZUL-PRIMARIO);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mapaifma {
+    display: flex;
+    align-items: center;
+}
+
+.aboutme_content {
+    width: 50%;
+    height: 50%;
+    display: block;
+}
+
+.aboutme_content h1 {
+    color: var(--AZUL-QUARTENARIO);
+}
+
+.aboutme_content h3 {
+    color: var(--AZUL-QUARTENARIO)
+}
+
+.aboutme_texts{
+    padding-bottom: 25px;
+}
+
+.tecnologias {
+    color: var(--AZUL-QUARTENARIO);
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.tecnologias i {
+    font-size: 50px;
+    transition: 0.3s;
+}
+
+.tecnologias i:hover {
+    cursor: pointer;
+    font-size: 75px;
+    text-shadow: 0px 0px 10px var(--AZUL-WHITE);
+
 }
