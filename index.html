@@ -12,12 +12,15 @@
 
 <body>
     <header>
-        <h2 class="redes_sociais_texto">Portfólio</h2>
         <div class="sections">
             <a href="">Inicio</a>
             <a href="">Sobre Mim</a>
             <a href="">Contatos</a>
         </div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round">DarkMode</span>
+        </label>
     </header>
 
     <main>
@@ -30,10 +33,11 @@
                 <h3>Um jovem de <span id="idade" class="calculoidade">X</span> anos apaixonado por programação e
                     aprendizado</h3>
                 <div class="redes_sociais">
-                    <a href="https://github.com/SAVANOo" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/s%C3%A1vio-mendes/" target="_blank"><i
+                    <a href="https://github.com/SAVANOo" target="_blank" title="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/s%C3%A1vio-mendes/" target="_blank" title="Linkedin"><i
                             class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/_savio_mendes_/" target="_blank"><i
+                    <a href="https://www.instagram.com/_savio_mendes_/" target="_blank" title="Instagram"><i
                             class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
@@ -66,11 +70,38 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
+        <section class="contact">
+            <div class="contactContainer">
+                <h1>Entre em Contato</h1>
+
+                <div class="contactItems">
+                    <span>
+                        <a href="https://www.linkedin.com/in/s%C3%A1vio-mendes/" target="_blank" title="Linkedin"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <h2>Linkedin</h2>
+                        <h3>Sávio Mendes</h3>
+                    </span>
+
+                    <span>
+                        <a href="https://github.com/SAVANOo" target="_blank" title="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
+                        <h2>GitHub</h2>
+                        <h3>@SAVANOo</h3>
+                    </span>
+
+                    <span>
+                        <a href="mailto:savano947@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <h2>E-mail</h2>
+                        <h3>savano947@gmail.com</h3>
+                    </span>
+                </div>
+            </div>
+        </section>
 
     </main>
 
     <footer>
-        <p >Todos os direitos reservados <br> <i class="fa-regular fa-copyright"></i> Sávio Mendes 2023</p>
+        <p>Todos os direitos reservados <br> <i class="fa-regular fa-copyright"></i> Sávio Mendes 2023</p>
     </footer>
     <script src="/script.js"></script>
 </body>
