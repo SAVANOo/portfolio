@@ -21,11 +21,13 @@ header {
     background-color: var(--AZUL-QUARTENARIO);
     border-bottom: 2px solid var(--AZUL-SECUNDARIO);
     height: 3.5rem;
+    width: 100vw;
     align-items: center;
     display: flex;
     justify-content: space-between;
     padding: 1px 50px;
-    color: var(--AZUL-WHITE);
+    color: var(--AZUL-WHITE);   
+    position: fixed;
 }
 
 footer {
