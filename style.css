@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --AZUL-QUARTENARIO: #03001C;
+    --AZUL-QUARTENARIO: #FC4A1A;
     --AZUL-TERCIARIO: #0d017c;
     --AZUL-SECUNDARIO: #301E67;
     --AZUL-PRIMARIO: #5B8FB9;
     --AZUL-WHITE: #B6EADA;
+    --background-color-main: #27323E;
+    --background-color-second: #212529;
+    --white: #fff;
+    --white-hover: rgb(215, 215, 215);
 }
 
 
@@ -16,17 +20,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+}
 
 header {
     background-color: var(--AZUL-QUARTENARIO);
-    border-bottom: 2px solid var(--AZUL-SECUNDARIO);
     height: 3.5rem;
     width: 100vw;
     align-items: center;
     display: flex;
-    justify-content: space-between;
-    padding: 1px 50px;
-    color: var(--AZUL-WHITE);   
+    justify-content: space-around;
+    color: white;
     position: fixed;
 }
 
@@ -35,11 +41,14 @@ footer {
     align-items: center;
     color: #03001C;
     justify-content: center;
+    width: 100vw;
+    background-color: var(--white);
 }
 
 section {
-    height: 100vh;
-    padding: 0px 50px;
+    width: 100vw;
+    min-height: 100vh;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -59,10 +68,11 @@ h3 {
 
 .inicio {
     align-items: center;
-    background-color: var(--AZUL-QUARTENARIO);
-    display: flex;
-    justify-content: space-between;
     text-align: center;
+    background-color: var(--background-color-main);
+    display: flex;
+    padding: 60px;
+    justify-content: space-around;
 }
 
 .sections {
@@ -71,7 +81,7 @@ h3 {
 
 .sections a {
     align-items: center;
-    color: var(--AZUL-WHITE);
+    color: var(--white);
     padding: 0px 15px;
     text-decoration-line: none;
 }
@@ -79,7 +89,7 @@ h3 {
 .sections a:hover,
 .sections a:focus {
     text-decoration-line: underline;
-    color: var(--AZUL-PRIMARIO);
+    color: var(--white-hover);
 }
 
 
@@ -91,36 +101,38 @@ h3 {
 
 .redes_sociais a {
     align-items: center;
-    font-size: 170%;
-    padding: 0px 20px;
+    font-size: 25px;
+    padding: 5px 10px;
     margin: 10px;
-    color: var(--AZUL-WHITE);
-    border-radius: 10%;
+    color: var(--white);
+    border-radius: 50%;
+    background-color: var(--AZUL-QUARTENARIO);
 }
 
 .redes_sociais a:hover {
-    color: var(--AZUL-PRIMARIO);
+    color: var(--white-hover);
 }
 
 
 .imagem_inicio {
-    height: 75%;
-    width: auto;
-    border: solid 10px var(--AZUL-SECUNDARIO);
+    width: 35%;
+    height: auto;
+    border: solid 5px var(--AZUL-QUARTENARIO);
     border-radius: 50%;
 }
 
 .Texts {
-    padding: 50px;
     align-items: center;
 }
 
 .Texts h1 {
-    color: var(--AZUL-WHITE);
+    color: var(--white);
+    font-size: 60px;
 }
 
 .Texts h2 {
-    color: var(--AZUL-SECUNDARIO);
+    color: var(--AZUL-QUARTENARIO);
+    font-size: 38px;
 }
 
 
@@ -130,10 +142,10 @@ h3 {
 
 
 .aboutme {
-    background-color: var(--AZUL-PRIMARIO);
+    background-color: var(--background-color-second);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .mapaifma {
@@ -152,7 +164,7 @@ h3 {
 }
 
 .aboutme_content h3 {
-    color: var(--AZUL-QUARTENARIO)
+    color: var(--white);
 }
 
 .aboutme_texts {
@@ -161,12 +173,14 @@ h3 {
 
 .tecnologias {
     color: var(--AZUL-QUARTENARIO);
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: auto;
+    display: flex;
 }
 
 .tecnologias i {
+    width: 75%;
+    height: 75%;
     font-size: 50px;
     transition: 0.3s;
     align-items: center;
@@ -175,7 +189,7 @@ h3 {
 .tecnologias i:hover {
     cursor: pointer;
     font-size: 75px;
-    text-shadow: 0px 0px 10px var(--AZUL-WHITE);
+    text-shadow: 0px 0px 10px var(--white);
 
 }
 
@@ -208,11 +222,11 @@ h3 {
 }
 
 .contactContainer h1 {
-    color: var(--AZUL-WHITE);
+    color: var(--white);
 }
 
 .contactItems span h2 {
-    color: var(--AZUL-SECUNDARIO);
+    color: var(--white);
     font-size: 20px;
 }
 
@@ -222,5 +236,5 @@ h3 {
 
 .contactItems span a {
     font-size: 60px;
-    color: var(--AZUL-PRIMARIO);
+    color: var(--white);
 }
