@@ -21,8 +21,6 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
 }
 
 header {
@@ -48,7 +46,6 @@ footer {
 section {
     width: 100vw;
     min-height: 100vh;
-    flex-wrap: wrap;
 }
 
 h1 {
@@ -71,18 +68,22 @@ h3 {
     text-align: center;
     background-color: var(--background-color-main);
     display: flex;
-    padding: 60px;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3.5rem 0;
 }
 
 .sections {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
     align-items: center;
+
 }
 
 .sections a {
     align-items: center;
     color: var(--white);
-    padding: 0px 15px;
     text-decoration-line: none;
 }
 
@@ -95,15 +96,15 @@ h3 {
 
 .redes_sociais {
     padding-top: 10px;
-    display: block;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 }
 
 .redes_sociais a {
     align-items: center;
     font-size: 25px;
     padding: 5px 10px;
-    margin: 10px;
     color: var(--white);
     border-radius: 50%;
     background-color: var(--AZUL-QUARTENARIO);
@@ -111,10 +112,11 @@ h3 {
 
 .redes_sociais a:hover {
     color: var(--white-hover);
+    background-color: #cf2f03;
 }
 
 
-.imagem_inicio {
+.imagem_inicio   {
     width: 35%;
     height: auto;
     border: solid 5px var(--AZUL-QUARTENARIO);
@@ -132,7 +134,7 @@ h3 {
 
 .Texts h2 {
     color: var(--AZUL-QUARTENARIO);
-    font-size: 38px;
+    font-size: 34px;
 }
 
 
@@ -154,9 +156,10 @@ h3 {
 }
 
 .aboutme_content {
-    width: 50%;
-    height: 50%;
-    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .aboutme_content h1 {
@@ -174,8 +177,11 @@ h3 {
 .tecnologias {
     color: var(--AZUL-QUARTENARIO);
     justify-content: space-around;
-    height: auto;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    border: solid 1px black;
 }
 
 .tecnologias i {
@@ -201,7 +207,9 @@ h3 {
 }
 
 .contactContainer {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
 
@@ -210,7 +218,8 @@ h3 {
 .contactItems {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding-top: 15px;
 }
 
