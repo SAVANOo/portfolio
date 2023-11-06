@@ -254,10 +254,14 @@ h3 {
 }
 
 .AboutMe-Texts-Title {
-    color: var(--MAIN-COLOR);
+    color: var(--white);
 }
 
 .AboutMe-Texts-Subtitle {
+    color: var(--white);
+}
+
+.AboutMe-Texts-Tecnology{
     color: var(--white);
 }
 
@@ -266,7 +270,7 @@ h3 {
 }
 
 .tecnologias {
-    color: var(--MAIN-COLOR);
+    color: var(--white);
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -287,7 +291,7 @@ h3 {
 .tecnologias i:focus {
     cursor: pointer;
     font-size: 75px;
-    text-shadow: 0px 0px 10px var(--white);
+    text-shadow: 0px 0px 10px var(--MAIN-COLOR);
 
 }
 
