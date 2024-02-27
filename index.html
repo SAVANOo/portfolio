@@ -8,41 +8,79 @@
     <title>Sávio Mendes Portfólio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="'src/FavIcon.png">
-    <script src="script.js" defer></script>
+    <script src="main.js" defer></script>
     <script src="https://kit.fontawesome.com/10c2a015e5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="sections">
-            <a href="#home">Inicio</a>
-            <a href="#project">Projetos</a>
-            <a href="#aboutme">Sobre Mim</a>
-            <a href="#contact">Contatos</a>
-        </div>
+        <h1 class="Header-Title">Sávio Mendes</h1>
+        <nav class="Header-social">
+            <a target="_blank" href="https://www.linkedin.com/in/s%C3%A1vio-mendes/"><i
+                    class="Header-Icon fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/SAVANOo"><i
+                    class="Header-Icon fa-brands fa-square-github"></i></a>
+            <a target="_blank" href="https://www.instagram.com/_savio_mendes_/"><i
+                    class="Header-Icon fa-brands fa-square-instagram"></i></a>
+            <a target="_blank" href="mailto:savano947@gmail.com"><i class="Header-Icon fa-solid fa-envelope"></i></a>
+        </nav>
     </header>
 
     <main>
-
-        <section class="Home" id="home">
-            <img class="Home-Image" src="https://avatars.githubusercontent.com/u/91269138" alt="foto">
-
-            <Div class="Home-Texts">
-                <h1 class="Home-Texts-Name">Sávio Mendes</h1>
-                <h2 class="Home-Texts-Office">Desenvolvedor Front End</h2>
-                <h3 class="Home-Texts-Subtitle">Um jovem de <span id="idade" class="calculoidade">X</span> anos
-                    apaixonado
-                    por programação e
-                    aprendizado</h3>
-                <div class="Home-Texts-Buttons">
+        <section id="Welcome" class="Section-Content">
+            <Div class="Content">
+                <h1 class="Title">Bem Vindo!</h1>
+                <h3 class="Subtitle">Sou um jovem de 20 anos, cursando Bacharelado em
+                    Ciência da Computação pelo IFMA, estou a procura de uma oportunidade de adentrar no mercado de
+                    trabalho da programação onde possa demonstrar meus conhecimentos em Front End. <br>
+                    Dedicado ao aprendizado, com bom relacionamento em equipe, consigo agregar e fortalecer
+                    qualquer ambiente.</h3>
+                <div class="Buttons">
                     <a href="src/Sávio M. Desenvolvedor Front End.pdf" download="Sávio M. Desenvolvedor Front End.pdf"
-                        class="Home-Texts-Buttom" id="Home-Texts-Buttons-Curriculum">Curriculo</a>
-                    <a href="#contact" class="Home-Texts-Buttom" id="Home-Texts-Buttons-Contact">Contato</a>
+                        class="Buttom Buttom-Type-1" id="Texts-Buttons-Curriculum">Curriculo</a>
                 </div>
             </div>
-
         </section>
+        <section id="Education" class="Section-Content disable">
+            <Div class="Content">
+                <h1 class="Title">Formação Academicas!</h1>
+                <h3 class="Subtitle">Sou um jovem de 20 anos, cursando Bacharelado em
+                    Ciência da Computação pelo IFMA, estou a procura de uma oportunidade de adentrar no mercado de
+                    trabalho da programação onde possa demonstrar meus conhecimentos em Front End. <br>
+                    Dedicado ao aprendizado, com bom relacionamento em equipe, consigo agregar e fortalecer
+                    qualquer ambiente.</h3>
+                <div class="Buttons">
+                    <a href="src/Sávio M. Desenvolvedor Front End.pdf" download="Sávio M. Desenvolvedor Front End.pdf"
+                        class="Buttom Buttom-Type-1" id="Texts-Buttons-Curriculum">Curriculo</a>
+                </div>
+            </div>
+        </section>
+        <nav class="Navigation-Container">
+            <h3 class="Navigation-Title">Seções</h3>
+            <ul class="Navigation">
+                <li class="Navigation-Item Navigation-Item-Active" id="navigationWelcome"
+                    onclick="changeContent('Welcome')">Bem
+                    Vindo!</li>
+                <li class="Navigation-Item" id="navigationEducation" onclick="changeContent('Education')">
+                    Formações Acadêmica</li>
+                <li class="Navigation-Item" id="navigationTecnology" onclick="changeContent('Tecnology')">
+                    Tecnologias</li>
+                <li class="Navigation-Item" id="navigationProjects" onclick="changeContent('Projects')">
+                    Projetos
+                </li>
+            </ul>
+        </nav>
+    </main>
 
+    <footer>
+        <p>Todos os direitos reservados<i class="fa-regular fa-copyright"></i> Sávio Mendes 2024</p>
+    </footer>
+</body>
+<!-- 
         <section class="AboutMe" id="aboutme">
             <div class="AboutMe-Content">
                 <div class="AboutMe-Texts">
@@ -204,12 +242,7 @@
                 </div>
             </div>
         </section>
+ -->
 
-    </main>
-
-    <footer>
-        <p>Todos os direitos reservados <br> <i class="fa-regular fa-copyright"></i> Sávio Mendes 2024</p>
-    </footer>
-</body>
 
 </html>
