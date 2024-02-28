@@ -258,6 +258,25 @@ footer {
         width: 100%;
     }
 
+    .Title-Project {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .Description-Project {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .Tecnology-Project {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .Buttom-Project {
+        font-size: 18px;
+    }
+
     .Projects {
         justify-content: center;
     }
