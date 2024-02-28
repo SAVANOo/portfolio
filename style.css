@@ -18,8 +18,6 @@ html {
 }
 
 body {
-    max-width: 100vw;
-    max-height: 100vh;
     background-color: var(--BG-MAIN-COLOR);
     color: var(--white);
 }
@@ -63,7 +61,14 @@ header {
 
 }
 
+footer {
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+}
+
 .Content {
+    min-width: 50vw;
     max-width: 50vw;
     display: flex;
     flex-direction: column;
@@ -101,6 +106,74 @@ header {
     font-weight: 400;
 }
 
+.List {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Projects {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.Item-Project {
+    width: 256px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Image-Project {
+    width: 100%;
+}
+
+.Title-Project {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.Description-Project {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Tecnology-Project {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Buttons-Project {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Buttom-Project {
+    padding: 6px;
+    border: solid 1px var(--white);
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: var(--white);
+    color: black;
+}
+
+.Buttom-Project:hover {
+    background-color: var(--white-hover);
+}
+
+.Buttom-Project-Deploy {
+    background-color: var(--white);
+    color: black;
+}
+
 .Navigation-Container {
     display: flex;
     flex-direction: column;
@@ -130,8 +203,10 @@ header {
     cursor: pointer;
 }
 
+
 .disable {
     display: none;
+
 }
 
 .active {
