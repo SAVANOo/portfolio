@@ -177,8 +177,8 @@ footer {
 }
 
 .Buttom-Project-Deploy {
-    background-color: var(--white);
-    color: black;
+    background-color: green;
+    color: white;
 }
 
 .Buttom-Project-Unavailable {
